@@ -1,0 +1,14 @@
+.background-wrapper{
+
+    width:100%;
+    background-color: cadetblue;
+    background-size: cover;
+}
+
+.wrapper{
+    
+    width: 50%;
+    background-color: white;
+    height:100vh;
+}
+

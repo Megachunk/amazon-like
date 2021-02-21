@@ -1,0 +1,19 @@
+
+
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let o of productList">
+            <mat-card class="cardsize" fxFlex>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                    alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>{{o.ProductName}}</p>
+                    <p>{{o.price|currency}}</p>
+                    <p>Free Delivery</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="addcart(o.prodId)">Add to cart</button>
+                </mat-card-actions>
+
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>

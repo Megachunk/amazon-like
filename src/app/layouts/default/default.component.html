@@ -1,0 +1,15 @@
+<app-header flexLayout="row" ></app-header>
+
+<div class="div1" flexLayout="row">   
+    <div *ngIf="isMenuToggle"  fxFlex=20>
+        <app-sidebar fxFlex></app-sidebar>
+    </div>
+    <div fxFlex >
+        <div fxFlex>
+            <router-outlet class="content"></router-outlet></div>
+        
+    </div>
+    
+</div>
+<app-footeer></app-footeer>
+    

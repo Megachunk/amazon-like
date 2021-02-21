@@ -1,0 +1,21 @@
+<mat-toolbar class="myheader"  fxLayoutAlign="space-between center">
+
+    <div>
+        LOGO
+        <button mat-flat-button (click)="toggleMenu()" color="primary">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-flat-button routerLink='/' color="accent">
+            <mat-icon>home</mat-icon>
+        </button>
+    </div>
+
+
+    
+    <div fxLayoutGap="20px">
+    <button mat-flat-button color="accent" (click)="CloseMenu()"><mat-icon >input</mat-icon></button>
+    <button mat-flat-button routerLink='/posts' color="accent"><mat-icon>Posts</mat-icon></button>
+    <button mat-flat-button color="accent"><mat-icon [matBadge]="cartListCount" matBadgeColor="warn">add_shopping_cart</mat-icon>
+    </button>
+    </div>
+</mat-toolbar>

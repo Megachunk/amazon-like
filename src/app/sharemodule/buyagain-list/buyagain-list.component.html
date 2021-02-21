@@ -1,0 +1,18 @@
+<div class="wrapper" fxLayout="column" >
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let o of orderlist">
+            <mat-card class="cardsize" fxFlex>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                    alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>{{o.ProductName}}</p>
+                    <p>{{o.price|currency}}</p>
+                    <p>Free Delivery</p>
+                </mat-card-content>
+    
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+

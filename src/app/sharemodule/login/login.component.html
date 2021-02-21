@@ -1,0 +1,38 @@
+
+<div  class="background-wrapper" >
+    <div fxLayout="row" fxLayoutAlign="center center">
+    <div class="wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+        <h1>LOGO</h1>
+        <h2>LOGIN INTO YOUR ACCOUNT</h2>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Joe">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Chen">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="111111111" [formControl]="password">
+            <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <mat-checkbox  [(ngModel)]="rememberforgetlogin">Remember Me</mat-checkbox>
+
+    <button mat-raised-button color="primary" >Submit</button>
+    </div>
+    </div>
+
+</div>
+
